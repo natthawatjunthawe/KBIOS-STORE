@@ -1,0 +1,104 @@
+{ "items": [ { "id": "g1", "cat": "games", "title": "ROV Mini", "dev": "bananathM Studio",
+
+"verified": true,
+  "rank": 1,
+  "downloads": "1M+",
+  "rateCount": "95K",
+  "featured": true,
+  "trending": true,
+  "updated": "2026-05-18",
+  "banner": "banner1.jpg",
+  "tags": ["moba", "online", "5v5"],
+  "age": "12+",
+  "pkg": "com.kbios.rovmini",
+  "updateSize": "3MB",
+
+  "icon": "https://play-lh.googleusercontent.com/jPpnWbnI9B87nL89iFq-E663z0Y4Vb9FzE6K7E49Y0B6Z4J9u6zU7G2B4G2W8zE4aQ=w240-h480-rw",
+  "desc": "สุดยอดเกม MOBA ฉบับมินิที่สร้างจาก KBIOS Engine เล่นลื่นไหล ไม่ต้องโหลดแอป",
+
+  "img": [
+    "https://play-lh.googleusercontent.com/jPpnWbnI9B87nL89iFq-E663z0Y4Vb9FzE6K7E49Y0B6Z4J9u6zU7G2B4G2W8zE4aQ=w240-h480-rw"
+  ],
+
+  "vid": "",
+  "type": "ks",
+
+  "ksData": "[KBIOS-ENGINE-V1]PUT_YOUR_ENCRYPTED_DATA_HERE",
+
+  "size": "12MB",
+  "ver": "1.0.4",
+  "rate": "4.8"
+},
+
+{
+  "id": "a1",
+  "cat": "apps",
+  "title": "KBIOS Tools",
+  "dev": "Admin",
+
+  "verified": true,
+  "rank": 2,
+  "downloads": "250K+",
+  "rateCount": "12K",
+  "featured": false,
+  "trending": true,
+  "updated": "2026-05-18",
+  "banner": "banner2.jpg",
+  "tags": ["tools", "system", "manager"],
+  "age": "3+",
+  "pkg": "com.kbios.tools",
+  "updateSize": "5MB",
+
+  "icon": "https://placehold.co/150x150/2563eb/FFF?text=K",
+  "desc": "แอปพลิเคชันสำหรับจัดการระบบ",
+
+  "img": [
+    "https://placehold.co/300x500/2563eb/FFF?text=App1",
+    "https://placehold.co/300x500/1e40af/FFF?text=App2"
+  ],
+
+  "vid": "",
+  "type": "apk",
+  "link": "https://example.com/file.apk",
+
+  "size": "25MB",
+  "ver": "2.1",
+  "rate": "4.5"
+},
+
+{
+  "id": "b1",
+  "cat": "books",
+  "title": "คู่มือ KBIOS",
+  "dev": "bananathM",
+
+  "verified": false,
+  "rank": 3,
+  "downloads": "10K+",
+  "rateCount": "1K",
+  "featured": false,
+  "trending": false,
+  "updated": "2026-05-18",
+  "banner": "banner3.jpg",
+  "tags": ["guide", "manual", "kbios"],
+  "age": "3+",
+  "pkg": "com.kbios.manual",
+  "updateSize": "1MB",
+
+  "icon": "https://placehold.co/150x150/10b981/FFF?text=Book",
+  "desc": "คู่มือการใช้งาน KBIOS แบบละเอียด",
+
+  "img": [
+    "https://placehold.co/300x500/10b981/FFF?text=Page1"
+  ],
+
+  "vid": "",
+  "type": "pdf",
+  "link": "https://example.com/guide.pdf",
+
+  "size": "5MB",
+  "ver": "1.0",
+  "rate": "4.9"
+}
+
+] }
