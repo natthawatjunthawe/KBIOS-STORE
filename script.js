@@ -10,7 +10,7 @@ window.onload = async () => {
             $('ldr-msg').style.display = 'inline-flex';
             $('sp-ldr').style.display = 'none';
         }
-    }, 8000);
+    }, 1000);
     try {
         let c = new AbortController();
         let i = setTimeout(() => c.abort(), 7500);
