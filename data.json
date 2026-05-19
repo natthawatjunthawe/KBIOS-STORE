@@ -1,104 +1,228 @@
-{ "items": [ { "id": "g1", "cat": "games", "title": "ROV Mini", "dev": "bananathM Studio",
-
-"verified": true,
-  "rank": 1,
-  "downloads": "1M+",
-  "rateCount": "95K",
-  "featured": true,
-  "trending": true,
-  "updated": "2026-05-18",
-  "banner": "banner1.jpg",
-  "tags": ["moba", "online", "5v5"],
-  "age": "12+",
-  "pkg": "com.kbios.rovmini",
-  "updateSize": "3MB",
-
-  "icon": "https://play-lh.googleusercontent.com/jPpnWbnI9B87nL89iFq-E663z0Y4Vb9FzE6K7E49Y0B6Z4J9u6zU7G2B4G2W8zE4aQ=w240-h480-rw",
-  "desc": "สุดยอดเกม MOBA ฉบับมินิที่สร้างจาก KBIOS Engine เล่นลื่นไหล ไม่ต้องโหลดแอป",
-
-  "img": [
-    "https://play-lh.googleusercontent.com/jPpnWbnI9B87nL89iFq-E663z0Y4Vb9FzE6K7E49Y0B6Z4J9u6zU7G2B4G2W8zE4aQ=w240-h480-rw"
-  ],
-
-  "vid": "",
-  "type": "ks",
-
-  "ksData": "[KBIOS-ENGINE-V1]PUT_YOUR_ENCRYPTED_DATA_HERE",
-
-  "size": "12MB",
-  "ver": "1.0.4",
-  "rate": "4.8"
-},
-
 {
-  "id": "a1",
-  "cat": "apps",
-  "title": "KBIOS Tools",
-  "dev": "Admin",
-
-  "verified": true,
-  "rank": 2,
-  "downloads": "250K+",
-  "rateCount": "12K",
-  "featured": false,
-  "trending": true,
-  "updated": "2026-05-18",
-  "banner": "banner2.jpg",
-  "tags": ["tools", "system", "manager"],
-  "age": "3+",
-  "pkg": "com.kbios.tools",
-  "updateSize": "5MB",
-
-  "icon": "https://placehold.co/150x150/2563eb/FFF?text=K",
-  "desc": "แอปพลิเคชันสำหรับจัดการระบบ",
-
-  "img": [
-    "https://placehold.co/300x500/2563eb/FFF?text=App1",
-    "https://placehold.co/300x500/1e40af/FFF?text=App2"
-  ],
-
-  "vid": "",
-  "type": "apk",
-  "link": "https://example.com/file.apk",
-
-  "size": "25MB",
-  "ver": "2.1",
-  "rate": "4.5"
-},
-
-{
-  "id": "b1",
-  "cat": "books",
-  "title": "คู่มือ KBIOS",
-  "dev": "bananathM",
-
-  "verified": false,
-  "rank": 3,
-  "downloads": "10K+",
-  "rateCount": "1K",
-  "featured": false,
-  "trending": false,
-  "updated": "2026-05-18",
-  "banner": "banner3.jpg",
-  "tags": ["guide", "manual", "kbios"],
-  "age": "3+",
-  "pkg": "com.kbios.manual",
-  "updateSize": "1MB",
-
-  "icon": "https://placehold.co/150x150/10b981/FFF?text=Book",
-  "desc": "คู่มือการใช้งาน KBIOS แบบละเอียด",
-
-  "img": [
-    "https://placehold.co/300x500/10b981/FFF?text=Page1"
-  ],
-
-  "vid": "",
-  "type": "pdf",
-  "link": "https://example.com/guide.pdf",
-
-  "size": "5MB",
-  "ver": "1.0",
-  "rate": "4.9"
+  "items": [
+    {
+      "id": "g1",
+      "cat": "games",
+      "title": "ROV Mini Arena",
+      "dev": "BananaTH Studio",
+      "verified": true,
+      "rank": 1,
+      "downloads": "1M+",
+      "rateCount": "95K",
+      "featured": true,
+      "trending": true,
+      "updated": "2026-05-18",
+      "tags": ["MOBA", "Online", "5v5"],
+      "age": "12+",
+      "pkg": "com.kbios.rovmini",
+      "updateSize": "3MB",
+      "icon": "https://placehold.co/150x150/2563eb/FFF?text=ROV",
+      "desc": "สุดยอดเกม MOBA ฉบับมินิที่สร้างจาก KBIOS Engine เล่นลื่นไหลบนทุกแพลตฟอร์ม ไม่กินสเปกเครื่อง ท้าทายฝีมือการควบคุมของคุณได้แล้ววันนี้!",
+      "img": [
+        "https://placehold.co/300x500/2563eb/FFF?text=ROV+Screen+1",
+        "https://placehold.co/300x500/1e40af/FFF?text=ROV+Screen+2"
+      ],
+      "type": "ks",
+      "ksData": "[KBIOS-ENGINE-V1]\nU2FsdGVkX19658zUq0P6p7M+t5m7YfO4h1W2R3g5P8iE9rT8hY8p5eY8iE9rT8hY8p5eY8iE9rT8hY8p5eY8iE9rT8hY8p5eU2FsdGVkX19DdfgHJi8zKk7m8dY9P6kRjS4eWwQ8a1sM5vPxN9lC3zTk9m8fR4wQ8s2tM6uPxN8lC4zTk= (จำลองรหัสความปลอดภัย)",
+      "size": "12MB",
+      "ver": "1.0.4",
+      "rate": "4.8"
+    },
+    {
+      "id": "g2",
+      "cat": "games",
+      "title": "Cyber Run 2026",
+      "dev": "PixelVibe Games",
+      "verified": false,
+      "rank": 2,
+      "downloads": "500K+",
+      "rateCount": "42K",
+      "featured": false,
+      "trending": true,
+      "updated": "2026-05-10",
+      "tags": ["Action", "Runner", "Cyberpunk"],
+      "age": "7+",
+      "pkg": "com.pixelvibe.cyberrun",
+      "updateSize": "15MB",
+      "icon": "https://placehold.co/150x150/db2777/FFF?text=RUN",
+      "desc": "วิ่งทะลุโลกอนาคตไปกับกราฟิกนีออนสุดตระการตา หลบหลีกสิ่งกีดขวางและเก็บคะแนนเพื่ออัปเกรดตัวละครของคุณในเมืองไซเบอร์พังก์สุดล้ำ",
+      "img": [
+        "https://placehold.co/300x500/db2777/FFF?text=Run+Screen+1",
+        "https://placehold.co/300x500/9d174d/FFF?text=Run+Screen+2"
+      ],
+      "type": "apk",
+      "link": "https://github.com/",
+      "size": "45MB",
+      "ver": "2.1.0",
+      "rate": "4.5"
+    },
+    {
+      "id": "a1",
+      "cat": "apps",
+      "title": "KBIOS Tools Master",
+      "dev": "KBIOS Official Dev",
+      "verified": true,
+      "rank": 1,
+      "downloads": "250K+",
+      "rateCount": "18K",
+      "featured": true,
+      "trending": false,
+      "updated": "2026-05-19",
+      "tags": ["Tools", "System", "Optimizer"],
+      "age": "3+",
+      "pkg": "com.kbios.toolsmaster",
+      "updateSize": "2MB",
+      "icon": "https://placehold.co/150x150/10b981/FFF?text=TOOLS",
+      "desc": "แอปพลิเคชันจัดการและเพิ่มประสิทธิภาพการทำงานของระบบ ล้างไฟล์ขยะ ตรวจสอบหน่วยความจำ และจัดการแอปในเครื่องได้อย่างรวดเร็วและปลอดภัย",
+      "img": [
+        "https://placehold.co/300x500/10b981/FFF?text=Tools+Screen+1",
+        "https://placehold.co/300x500/065f46/FFF?text=Tools+Screen+2"
+      ],
+      "type": "apk",
+      "link": "https://github.com/",
+      "size": "8MB",
+      "ver": "3.0.2",
+      "rate": "4.9"
+    },
+    {
+      "id": "a2",
+      "cat": "apps",
+      "title": "PicVibe Editor",
+      "dev": "VibeLab Inc.",
+      "verified": true,
+      "rank": 2,
+      "downloads": "100K+",
+      "rateCount": "9K",
+      "featured": false,
+      "trending": true,
+      "updated": "2026-04-25",
+      "tags": ["Photography", "Editor", "Filters"],
+      "age": "3+",
+      "pkg": "com.vibelab.picvibe",
+      "updateSize": "12MB",
+      "icon": "https://placehold.co/150x150/f59e0b/FFF?text=EDIT",
+      "desc": "แต่งรูปภาพของคุณให้สวยงามสไตล์มืออาชีพด้วยฟิลเตอร์นับร้อยและเครื่องมือปรับแต่งที่ชาญฉลาด AI ประมวลผลภาพได้ภายในคลิกเดียว",
+      "img": [
+        "https://placehold.co/300x500/f59e0b/FFF?text=Editor+Screen+1",
+        "https://placehold.co/300x500/b45309/FFF?text=Editor+Screen+2"
+      ],
+      "type": "apk",
+      "link": "https://github.com/",
+      "size": "32MB",
+      "ver": "1.5.0",
+      "rate": "4.4"
+    },
+    {
+      "id": "b1",
+      "cat": "books",
+      "title": "Learn JS Expert 2026",
+      "dev": "CodePress Publishing",
+      "verified": true,
+      "rank": 1,
+      "downloads": "50K+",
+      "rateCount": "4K",
+      "featured": true,
+      "trending": true,
+      "updated": "2026-05-01",
+      "tags": ["Programming", "Education", "JavaScript"],
+      "age": "3+",
+      "pkg": "com.codepress.learnjs2026",
+      "updateSize": "1MB",
+      "icon": "https://placehold.co/150x150/6366f1/FFF?text=JS+BOOK",
+      "desc": "หนังสือคู่มือการเรียนรู้ภาษา JavaScript เจาะลึกตั้งแต่พื้นฐานจนถึงโครงสร้างระดับสูงขั้นเทพ เหมาะสำหรับผู้ที่ต้องการเป็น Full-Stack Developer",
+      "img": [
+        "https://placehold.co/300x500/6366f1/FFF?text=Book1+Cover",
+        "https://placehold.co/300x500/4338ca/FFF?text=Book1+Inside"
+      ],
+      "type": "apk",
+      "link": "https://github.com/",
+      "size": "15MB",
+      "ver": "2026.1",
+      "rate": "4.9"
+    },
+    {
+      "id": "b2",
+      "cat": "books",
+      "title": "Cyber Security Guide",
+      "dev": "SecOps Media",
+      "verified": false,
+      "rank": 2,
+      "downloads": "20K+",
+      "rateCount": "1.5K",
+      "featured": false,
+      "trending": false,
+      "updated": "2026-03-12",
+      "tags": ["Security", "Network", "Hacking"],
+      "age": "18+",
+      "pkg": "com.secops.cyberguide",
+      "updateSize": "850KB",
+      "icon": "https://placehold.co/150x150/ef4444/FFF?text=SEC+BOOK",
+      "desc": "ทำความเข้าใจระบบความปลอดภัยเครือข่ายและวิธีการป้องกันการโจมตีจากแฮกเกอร์ในยุคดิจิทัล หนังสือที่จะช่วยให้ระบบของคุณปลอดภัย 100%",
+      "img": [
+        "https://placehold.co/300x500/ef4444/FFF?text=Book2+Cover",
+        "https://placehold.co/300x500/b91c1c/FFF?text=Book2+Inside"
+      ],
+      "type": "apk",
+      "link": "https://github.com/",
+      "size": "8MB",
+      "ver": "1.0.2",
+      "rate": "4.6"
+    },
+    {
+      "id": "f1",
+      "cat": "files",
+      "title": "KBIOS Theme UI V1",
+      "dev": "UI Design Core",
+      "verified": true,
+      "rank": 1,
+      "downloads": "80K+",
+      "rateCount": "7.2K",
+      "featured": true,
+      "trending": true,
+      "updated": "2026-05-15",
+      "tags": ["Design", "Theme", "CSS"],
+      "age": "3+",
+      "pkg": "com.uicore.kbiosthemev1",
+      "updateSize": "500KB",
+      "icon": "https://placehold.co/150x150/ec4899/FFF?text=THEME",
+      "desc": "ไฟล์แจกฟรีสำหรับปรับแต่งหน้าตาอินเตอร์เฟส CSS คอนเซปต์ระดับพรีเมียม สไตล์ Glassmorphism ที่นุ่มนวลและทันสมัย นำไปประกอบโปรเจกต์ได้ทันที",
+      "img": [
+        "https://placehold.co/300x500/ec4899/FFF?text=Theme+Preview+1",
+        "https://placehold.co/300x500/be185d/FFF?text=Theme+Preview+2"
+      ],
+      "type": "apk",
+      "link": "https://github.com/",
+      "size": "2MB",
+      "ver": "1.0.0",
+      "rate": "4.7"
+    },
+    {
+      "id": "f2",
+      "cat": "files",
+      "title": "Database Template SQL",
+      "dev": "DataNode Tech",
+      "verified": true,
+      "rank": 2,
+      "downloads": "45K+",
+      "rateCount": "3.8K",
+      "featured": false,
+      "trending": false,
+      "updated": "2026-05-05",
+      "tags": ["Database", "SQL", "Backend"],
+      "age": "3+",
+      "pkg": "com.datanode.sqltemplate",
+      "updateSize": "120KB",
+      "icon": "https://placehold.co/150x150/14b8a6/FFF?text=SQL",
+      "desc": "โครงสร้างไฟล์ฐานข้อมูลสำเร็จรูปสำหรับระบบ E-Commerce และ Store App ออกแบบมาเพื่อประสิทธิภาพในการค้นหาและการจัดเก็บข้อมูลที่รวดเร็วสูงสุด",
+      "img": [
+        "https://placehold.co/300x500/14b8a6/FFF?text=SQL+Schema+1",
+        "https://placehold.co/300x500/0f766e/FFF?text=SQL+Schema+2"
+      ],
+      "type": "apk",
+      "link": "https://github.com/",
+      "size": "1.2MB",
+      "ver": "1.1.4",
+      "rate": "4.8"
+    }
+  ]
 }
-
-] }
