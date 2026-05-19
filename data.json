@@ -24,6 +24,43 @@
       "https://placehold.co/400x200/2563eb/fff?text=Preview+2"
     ],
     "type": "ks",
-    "ksData": "<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no'><style>body{margin:0;padding:24px;background:#0f172a;color:#ffffff;font-family:system-ui,-apple-system,sans-serif;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100vh;overflow:hidden;text-align:center}h1{font-size:28px;font-weight:800;color:#3b82f6;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}p{color:#94a3b8;font-size:14px;max-width:320px;line-height:1.6;margin-bottom:24px}.btn-core{background:#2563eb;color:#fff;border:none;padding:12px 32px;border-radius:12px;font-weight:700;font-size:14px;cursor:pointer;box-shadow:0 4px 14px rgba(37,99,235,0.4);transition:transform 0.2s}.btn-core:active{transform:scale(0.95)}</style></head><body><h1>Nat AI Cyber</h1><p>KBIOS Engine Core Integration successfully executed via Native Sandboxed Frame Window.</p><button class='btn-core' onclick='alert(\"Nat AI Core System Online\")'>Initialize AI Core</button><script>console.log('HTML Embedded Application Executed Successfully');<\/script></body></html>"
+    "ksData": "<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no'>
+<style>
+  body{margin:0;padding:0;background:#0f172a;color:#fff;font-family:system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;text-align:center}
+  .card{background:rgba(255,255,255,0.05);padding:2rem;border-radius:24px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1);max-width:300px;width:90%}
+  h1{font-size:1.5rem;color:#3b82f6;margin-bottom:1rem}
+  #status{font-size:0.9rem;color:#64748b;margin-bottom:2rem}
+  .btn{background:#3b82f6;color:white;border:none;padding:12px 24px;border-radius:12px;font-weight:bold;cursor:pointer;transition:0.3s}
+  .btn:active{transform:scale(0.95);background:#2563eb}
+</style>
+</head>
+<body>
+<div class='card'>
+  <h1>Neural Sync</h1>
+  <div id='status'>System Idle...</div>
+  <button class='btn' onclick='syncSystem()'>Initialize Sync</button>
+</div>
+<script>
+  function syncSystem(){
+    let s=document.getElementById('status');
+    let c=0;
+    s.innerText='Synchronizing... 0%';
+    let i=setInterval(()=>{
+      c+=20;
+      s.innerText='Synchronizing... '+c+'%';
+      if(c>=100){
+        clearInterval(i);
+        s.innerText='System Online: Core Active';
+        document.body.style.background='#1e293b';
+      }
+    },500);
+  }
+</script>
+</body>
+</html>"
   }
 ]
