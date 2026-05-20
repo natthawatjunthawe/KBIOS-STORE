@@ -1,417 +1,107 @@
-let db=[],cApp=null,cC='games',sz=6;
-let u={p:[],r:[],n:'Guest',t:'Player',a:'https://placehold.co/100/2563eb/fff?text=U',adv:new Array(30).fill(!1),usn:'guest_user'};
-let aiA=['https://api.dicebear.com/7.x/micah/svg?seed=NatAI&backgroundColor=2563eb','https://api.dicebear.com/7.x/micah/svg?seed=KBIOS&backgroundColor=10b981','https://api.dicebear.com/7.x/micah/svg?seed=Cyber&backgroundColor=f59e0b','https://robohash.org/natai_agent_01.png?size=150x150&set=set1','https://robohash.org/kbios_core_02.png?size=150x150&set=set1','https://robohash.org/system_node_03.png?size=150x150&set=set1','https://api.dicebear.com/7.x/pixel-art/svg?seed=Division&backgroundColor=ef4444','https://api.dicebear.com/7.x/pixel-art/svg?seed=Kernel&backgroundColor=8b5cf6','https://placehold.co/150/1e293b/10b981?text=SYS','https://placehold.co/150/1e293b/3b82f6?text=DEV'];
-let aiI=0,cAiS='',advL=["Performance Core","Network Booster","Data Saver","Background Sync","Hardware Acceleration","High-Res Assets","Auto Clean Cache","Developer Logs","Haptic Engine","Sound FX","Smooth Scrolling","Dynamic Scaling","Font Accessibility","Icon Masking","Region Unlocked","Proxy Connection","Custom DNS","Analytics Reporting","Crash Dump","Push Notifications","Silent Install","Game Mode","Division Sync","Experimental UI","API Gateway","Legacy Support","Beta Features","Deep Links","Secure Enclave","Telemetry Data"];
-const localFallbackData=[{"id":"g1","cat":"games","title":"Nat AI Cyber","dev":"KBIOS DIVISION","icon":"https://placehold.co/200/2563eb/fff?text=NAT","size":"45 MB","rate":"4.9","rateCount":"12K","downloads":"1M+","age":"12+","rank":"1","ver":"0.4.0","verified":!0,"featured":!0,"trending":!0,"desc":"สุดยอด AI ที่ถูกพัฒนาขึ้นมาเพื่อจำลองสติปัญญาและวิเคราะห์ข้อมูลขั้นสูง พร้อมระบบตอบโต้รวดเร็วแบบเรียลไทม์","updated":"19 May 2026","pkg":"com.kbios.natai","updateSize":"12 MB","img":["https://placehold.co/400x200/0f172a/fff?text=Preview+1","https://placehold.co/400x200/2563eb/fff?text=Preview+2"],"type":"ks","ksData":"[KBIOS-ENGINE-V1]\nU2FsdGVkX19W5j8BvKlmv7C9XvY="},{"id":"a1","cat":"apps","title":"KBIOS Studio X","dev":"KBIOS DIVISION","icon":"https://placehold.co/200/10b981/fff?text=KX","size":"120 MB","rate":"4.7","rateCount":"5K","downloads":"500K+","age":"3+","rank":"3","ver":"2.1.0","verified":!0,"featured":!1,"trending":!1,"desc":"เครื่องมือปรับแต่ง UI และเขียนโค้ด .html, .css, .js บนมือถือ รองรับการทำงานแบบ Offline เต็มรูปแบบ","updated":"15 May 2026","pkg":"com.kbios.studiox","updateSize":"40 MB","img":["https://placehold.co/400x200/111827/fff?text=App+Preview+1","https://placehold.co/400x200/10b981/fff?text=App+Preview+2"],"type":"web","link":"https://github.com"}];
-const $=(i)=>document.getElementById(i);
-let vp=navigator.vibrate||function(){};
-
-window.onload=async()=>{
-  try{
-    let localAccounts=localStorage.getItem('kbs_accounts');
-    if(!localAccounts){localStorage.setItem('kbs_accounts',JSON.stringify([]))}
-    let curUsn=localStorage.getItem('kbs_cur_user');
-    if(curUsn){
-      let acts=JSON.parse(localStorage.getItem('kbs_accounts')||'[]');
-      let found=acts.find(x=>x.usn===curUsn);
-      if(found){u=found}else{chkAuTh()}
-    }else{chkAuTh()}
-    apA();
-  }catch(e){}
-  
-  let st=Date.now(),dt=null,er=!1;
-  try{
-    let r=await fetch('./data.json');
-    if(r.ok){dt=await r.json()}else{dt=localFallbackData}
-  }catch(e){
-    dt=localFallbackData
+[
+  {
+    "id": "g1",
+    "cat": "games",
+    "title": "KBIOS Cyber Node",
+    "dev": "KBIOS DIVISION",
+    "icon": "https://placehold.co/200/2563eb/fff?text=NODE",
+    "size": "5 MB",
+    "rate": "5.0",
+    "rateCount": "100K",
+    "downloads": "5M+",
+    "age": "ALL",
+    "rank": "1",
+    "ver": "1.0.0",
+    "verified": true,
+    "featured": true,
+    "trending": true,
+    "desc": "รันโค้ด HTML/JS ดิบๆ จากในฐานข้อมูลโดยตรง เหมาะสำหรับมินิเกมขนาดเล็ก",
+    "updated": "20 May 2026",
+    "pkg": "com.kbios.cybernode",
+    "updateSize": "5 MB",
+    "img": [
+      "https://placehold.co/400x200/0f172a/10b981?text=Cyber+Node+Preview",
+      "https://placehold.co/400x200/10b981/fff?text=Speed+Test"
+    ],
+    "type": "ks",
+    "ksData": "<!DOCTYPE html><html><head><meta name='viewport' content='width=device-width,initial-scale=1.0,user-scalable=no'><style>body{background:#0f172a;color:#10b981;font-family:monospace;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;overflow:hidden;user-select:none;}#node{width:50px;height:50px;background:#10b981;border-radius:50%;position:absolute;cursor:pointer;box-shadow:0 0 20px #10b981,inset 0 0 10px #fff;transition:transform 0.1s;}#node:active{transform:scale(0.8);}#ui{position:absolute;top:20px;left:20px;font-size:20px;font-weight:bold;text-shadow:0 0 10px #10b981;z-index:10;}.pulse{animation:pl 1s infinite alternate;}@keyframes pl{from{filter:brightness(1);}to{filter:brightness(1.5);}}</style></head><body><div id='ui' class='pulse'>SCORE: <span id='sc'>0</span> | TIME: <span id='tm'>15</span>s</div><div id='node' onclick='hit()'></div><script>let sc=0,tm=15,n=document.getElementById('node'),timer=setInterval(()=>{tm--;document.getElementById('tm').innerText=tm;if(tm<=0){clearInterval(timer);n.style.display='none';document.getElementById('ui').innerHTML=`SYSTEM OVERRIDDEN!<br>FINAL SCORE: ${sc}<br><span style='font-size:14px;color:#80868b'>Click to exit</span>`;document.body.onclick=()=>window.parent.xPly();}},1000);function hit(){sc+=10;document.getElementById('sc').innerText=sc;n.style.left=Math.random()*(window.innerWidth-60)+'px';n.style.top=Math.random()*(window.innerHeight-60)+'px';}hit();</script></body></html>"
+  },
+  {
+    "id": "g2",
+    "cat": "games",
+    "title": "Project X-Ray",
+    "dev": "EXTERNAL STUDIOS",
+    "icon": "https://placehold.co/200/ef4444/fff?text=X-RAY",
+    "size": "150 MB",
+    "rate": "4.8",
+    "rateCount": "45K",
+    "downloads": "2M+",
+    "age": "16+",
+    "rank": "2",
+    "ver": "2.1.4",
+    "verified": true,
+    "featured": true,
+    "trending": false,
+    "desc": "ตัวอย่างการดึงเกมขนาดใหญ่จากไฟล์ภายนอก โดยระบบจะโหลดโฟลเดอร์เกมมารันบน iFrame อัตโนมัติ",
+    "updated": "18 May 2026",
+    "pkg": "com.external.xray",
+    "updateSize": "20 MB",
+    "img": [
+      "https://placehold.co/400x200/1e293b/fff?text=X-Ray+Gameplay"
+    ],
+    "type": "ks",
+    "ksData": "games/xray/index.html"
+  },
+  {
+    "id": "a1",
+    "cat": "apps",
+    "title": "KBIOS Studio X",
+    "dev": "KBIOS DIVISION",
+    "icon": "https://placehold.co/200/10b981/fff?text=KX",
+    "size": "120 MB",
+    "rate": "4.7",
+    "rateCount": "5K",
+    "downloads": "500K+",
+    "age": "3+",
+    "rank": "3",
+    "ver": "2.1.0",
+    "verified": true,
+    "featured": false,
+    "trending": false,
+    "desc": "แอปพลิเคชันระบบปกติ ปุ่มจะเป็นการดาวน์โหลดลิงก์ภายนอก ไม่ได้ดึงเข้ามารันในระบบเกม",
+    "updated": "15 May 2026",
+    "pkg": "com.kbios.studiox",
+    "updateSize": "40 MB",
+    "img": [
+      "https://placehold.co/400x200/111827/fff?text=App+Preview"
+    ],
+    "type": "web",
+    "link": "https://github.com/kbios/studiox.apk"
+  },
+  {
+    "id": "b1",
+    "cat": "books",
+    "title": "System Architecture PDF",
+    "dev": "KBIOS PRESS",
+    "icon": "https://placehold.co/200/8b5cf6/fff?text=BOOK",
+    "size": "18 MB",
+    "rate": "5.0",
+    "rateCount": "920",
+    "downloads": "10K+",
+    "age": "ALL",
+    "rank": "1",
+    "ver": "1.0.2",
+    "verified": true,
+    "featured": false,
+    "trending": false,
+    "desc": "หนังสือหรือเอกสารทั่วไป สามารถตั้งค่าลิงก์ดาวน์โหลดได้ตามปกติ",
+    "updated": "01 May 2026",
+    "pkg": "book.kbios.arch",
+    "updateSize": "18 MB",
+    "img": [
+      "https://placehold.co/400x200/1e1b4b/fff?text=Book+Cover"
+    ],
+    "type": "web",
+    "link": "https://kbios.net/books/arch.pdf"
   }
-  
-  let el=Date.now()-st;
-  if(el<1500)await new Promise(r=>setTimeout(r,1500-el));
-  
-  if(dt){
-    db=Array.isArray(dt)?dt:dt.items||[];
-    let fi=document.querySelector('.nitem');
-    if(fi)sw('games',fi);
-    let l=$('ldr');
-    l.style.opacity='0';
-    setTimeout(()=>{l.style.display='none'},400);
-  }else{
-    $('ldr-msg').style.display='inline-flex';
-    $('sp-ldr').style.display='none';
-  }
-};
-
-function apA(){
-  let b=document.body.classList;
-  u.adv[0]?b.add('ad-0'):b.remove('ad-0');
-  u.adv[10]?b.add('ad-10'):b.remove('ad-10');
-  u.adv[12]?b.add('ad-12'):b.remove('ad-12');
-  vp=u.adv[8]?(navigator.vibrate||function(){}):function(){};
-}
-
-function rU(){
-  $('u-ic').src=u.a;
-  $('pf-ic').src=u.a;
-  $('u-tag').value=u.t;
-  $('u-nm').value=u.n;
-  let f=db.length?db:[];
-  if(u.p.length){
-    $('pn-g').innerHTML=u.p.map(id=>{
-      let x=f.find(z=>String(z.id)===String(id));
-      return x?cG(x):'';
-    }).join('');
-    $('u-sec').style.display='block';
-  }else{
-    $('pn-g').innerHTML='';
-    if(!u.r.length)$('u-sec').style.display='none';
-  }
-  if(u.r.length){
-    $('rc-g').innerHTML=u.r.map(id=>{
-      let x=f.find(z=>String(z.id)===String(id));
-      return x?cG(x):'';
-    }).join('');
-    $('u-sec').style.display='block';
-  }else{
-    $('rc-g').innerHTML='';
-    if(!u.p.length)$('u-sec').style.display='none';
-  }
-  rAcL();
-}
-
-function tst(m){
-  let t=$('toast');
-  t.innerText=m;
-  t.classList.add('st');
-  vp(50);
-  setTimeout(()=>t.classList.remove('st'),2500);
-}
-
-function cG(i,rk=0){
-  return `<div class="crd-w"><div class="crd" onclick="oDv('${i.id}')">${rk>0?`<div class="rk-bdg">${rk}</div>`:''} <img src="${i.icon||''}" loading="lazy" decoding="async"><div class="c-t">${i.title||'Unknown'}</div><div class="c-s">${i.size||'0MB'} ★ ${i.rate||'0.0'}</div></div></div>`;
-}
-
-function sw(c,el){
-  cC=c;sz=6;
-  document.querySelectorAll('.nitem').forEach(x=>x.classList.remove('act'));
-  if(el)el.classList.add('act');
-  $('c-ti').innerText=`All ${c.charAt(0).toUpperCase()+c.slice(1)}`;
-  let f=db.filter(x=>x.cat===c);
-  $('tp-g').innerHTML=f.slice(0,10).map((x,i)=>cG(x,i+1)).join('');
-  $('grd').innerHTML=f.slice(0,sz).map(x=>cG(x)).join('');
-  rU();
-  $('mn').scrollTo(0,0);
-}
-
-function oDv(id){
-  cApp=db.find(x=>String(x.id)===String(id));
-  if(!cApp)return;
-  vp(10);
-  $('d-ic').src=cApp.icon||';';
-  $('d-t').innerText=cApp.title||'';
-  $('d-d').innerHTML=`${cApp.dev||''}${cApp.verified?' <i class="fa-solid fa-circle-check v-bdg"></i>':''}`;
-  $('d-s').innerHTML=`${cApp.size||''} • v${cApp.ver||''}`;
-  $('d-stats').innerHTML=`<div class="stat-i"><span class="stat-v">${cApp.rate||'0'} <i class="fa-solid fa-star" style="font-size:12px;color:#f59e0b"></i></span><span class="stat-l">${cApp.rateCount||'0'} Revs</span></div><div class="stat-i"><span class="stat-v">${cApp.downloads||'0'}</span><span class="stat-l">DLs</span></div><div class="stat-i"><span class="stat-v">${cApp.age||'3+'}</span><span class="stat-l">Rated</span></div><div class="stat-i"><span class="stat-v">#${cApp.rank||'-'}</span><span class="stat-l">${(cApp.cat||'App').toUpperCase()}</span></div>`;
-  $('d-tags').innerHTML=(cApp.tags||[]).map(t=>`<span class="tg">${t}</span>`).join('')+(cApp.featured?'<span class="tg" style="background:#f59e0b;color:#fff">Featured</span>':'')+(cApp.trending?'<span class="tg" style="background:#ff3b30;color:#fff">Trending</span>':'');
-  $('d-desc').innerText=cApp.desc||'';
-  $('d-ex').innerHTML=`<div style="font-weight:800;margin-bottom:4px;font-size:15px">App Info</div><div><i class="fa-solid fa-calendar-check" style="width:20px;color:#80868b"></i> Updated: ${cApp.updated||'-'}</div><div><i class="fa-solid fa-box" style="width:20px;color:#80868b"></i> Package: ${cApp.pkg||'-'}</div><div><i class="fa-solid fa-file-arrow-down" style="width:20px;color:#80868b"></i> DL Size: ${cApp.updateSize||cApp.size||'-'}</div>`;
-  $('d-sc').innerHTML=(cApp.img||[]).map(m=>`<img src="${m}" loading="lazy" onclick="oMv(this.src)">`).join('');
-  let b=$('d-b');
-  if(cApp.type==='ks'){
-    b.innerHTML='<i class="fa-solid fa-play"></i> Play';
-    b.onclick=()=>pKs(cApp);
-  }else{
-    b.innerHTML='<i class="fa-solid fa-download"></i> Download';
-    b.onclick=()=>window.open(cApp.link,'_blank');
-  }
-  $('p-btn').style.color=u.p.includes(String(id))?'var(--p)':'#80868b';
-  $('dv').classList.add('show');
-  history.pushState({p:'dv'},"");
-}
-
-function cDv(){
-  $('dv').classList.remove('show');
-  cApp=null;
-}
-
-function tPin(){
-  if(!cApp)return;
-  let id=String(cApp.id),i=u.p.indexOf(id);
-  if(i>-1){
-    u.p.splice(i,1);
-    $('p-btn').style.color='#80868b';
-    tst('Unpinned');
-  }else{
-    if(u.p.length>=10){
-      tst('Max 10 pins');
-      return;
-    }
-    u.p.unshift(id);
-    $('p-btn').style.color='var(--p)';
-    tst('Pinned');
-  }
-  svU();
-  vp(20);
-}
-
-function svU(){
-  let acts=JSON.parse(localStorage.getItem('kbs_accounts')||'[]');
-  let idx=acts.findIndex(x=>x.usn===u.usn);
-  if(idx>-1){acts[idx]=u}else{acts.push(u)}
-  localStorage.setItem('kbs_accounts',JSON.stringify(acts));
-  localStorage.setItem('kbs_cur_user',u.usn);
-  rU();
-}
-
-function pKs(a){
-  try{
-    let id=String(a.id);
-    u.r=u.r.filter(x=>x!==id);
-    u.r.unshift(id);
-    if(u.r.length>10)u.r.pop();
-    svU();
-    let f=$('plyr');
-    f.style.display='block';
-    setTimeout(()=>f.classList.add('play'),50);
-    if(f.requestFullscreen)f.requestFullscreen();
-    let hC="";
-    let d=a.ksData?a.ksData.trim():"";
-    if(d.startsWith('http://')||d.startsWith('https://')||d.endsWith('.html')){
-      f.src=d;
-    }else{
-      if(d.startsWith('[KBIOS-ENGINE-V1]')){
-        let r=d.replace('[KBIOS-ENGINE-V1]\n','');
-        let dc=CryptoJS.AES.decrypt(r,'KBIOS_SECURE_KEY_2026').toString(CryptoJS.enc.Utf8);
-        try{
-          let o=JSON.parse(dc);
-          hC=`<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"><style>${o.c}</style></head><body>${o.h}<script>${o.j}<\/script></body></html>`;
-        }catch(e){
-          hC=dc;
-        }
-      }else{
-        hC=d;
-      }
-      let b=new Blob([hC],{type:'text/html'});
-      f.src=URL.createObjectURL(b);
-    }
-    history.pushState({p:'ply'},"");
-  }catch(e){
-    tst("Engine Launch Failed: "+e.message);
-  }
-}
-
-function xPly(){
-  let f=$('plyr');
-  f.classList.remove('play');
-  setTimeout(()=>{f.style.display='none';f.src=''},400);
-  if(document.fullscreenElement)document.exitFullscreen();
-}
-
-window.onpopstate=e=>{
-  if($('plyr').classList.contains('play'))xPly();
-  else if($('ai-mod').classList.contains('show'))cAi();
-  else if($('adv-mod').classList.contains('show'))cAdv();
-  else if($('mod').classList.contains('show'))cMod();
-  else if(!$('auth-mod').classList.contains('hide'))return;
-  else cDv();
-};
-
-$('sinp').addEventListener('input',e=>{
-  let v=e.target.value.toLowerCase();
-  if(!v)sw(cC,document.querySelector('.nitem.act'));
-  else{
-    $('grd').innerHTML=db.filter(x=>(x.title||'').toLowerCase().includes(v)||(x.dev||'').toLowerCase().includes(v)).map(x=>cG(x)).join('');
-  }
-});
-
-function shApp(){
-  if(navigator.share&&cApp)navigator.share({title:cApp.title,text:cApp.desc,url:window.location.href});
-}
-
-function oMod(){
-  $('mod').classList.add('show');
-  history.pushState({p:'mod'},"");
-}
-
-function cMod(){
-  $('mod').classList.remove('show');
-}
-
-function sUsr(){
-  u.t=$('u-tag').value;
-  u.n=$('u-nm').value;
-  let o=$('sv-b'),oh=o.innerHTML;
-  o.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Saving...';
-  setTimeout(()=>{
-    svU();
-    o.innerHTML=oh;
-    tst('Profile Saved');
-    cMod();
-  },800);
-}
-
-function oAi(){
-  $('ai-mod').classList.add('show');
-  history.pushState({p:'ai'},"");
-  gAi();
-}
-
-function cAi(){
-  $('ai-mod').classList.remove('show');
-}
-
-function gAi(){
-  $('ai-st').innerText='Generating with Nat Pro Nano...';
-  $('ai-grd').innerHTML='';
-  $('ai-sv').style.display='none';
-  cAiS='';
-  let r=[];
-  for(let i=0;i<3;i++){
-    r.push(aiA[aiI]);aiI++;
-    if(aiI>=aiA.length)aiI=0;
-  }
-  setTimeout(()=>{
-    $('ai-st').innerText='Select your unique avatar';
-    $('ai-grd').innerHTML=r.map((x,i)=>`<img src="${x}" onclick="slAi(this,'${x}')" style="transition-delay:${i*0.1}s">`).join('');
-    setTimeout(()=>document.querySelectorAll('.ai-g img').forEach(e=>e.classList.add('show')),50);
-  },1000);
-}
-
-function slAi(el,x){
-  document.querySelectorAll('.ai-g img').forEach(e=>e.classList.remove('sel'));
-  el.classList.add('sel');
-  cAiS=x;
-  $('ai-sv').style.display='inline-flex';
-  vp(10);
-}
-
-function sAi(){
-  if(!cAiS)return;
-  let o=$('ai-sv');
-  o.innerHTML='<i class="fa-solid fa-spinner fa-spin"></i> Applying...';
-  setTimeout(()=>{
-    u.a=cAiS;
-    $('pf-ic').src=cAiS;
-    svU();
-    o.innerHTML='<i class="fa-solid fa-check"></i> Apply Selected';
-    cAi();
-    tst('Avatar Updated');
-  },800);
-}
-
-$('mn').addEventListener('scroll',e=>{
-  if($('sinp').value)return;
-  let el=e.target;
-  if(el.scrollHeight-el.scrollTop<=el.clientHeight+100&&sz<db.length){
-    sz+=6;
-    let f=db.filter(x=>x.cat===cC);
-    $('grd').innerHTML=f.slice(0,sz).map(x=>cG(x)).join('');
-  }
-});
-
-function oAdv(){
-  $('adv-mod').classList.add('show');
-  history.pushState({p:'adv'},"");
-  $('adv-ls').innerHTML=advL.map((n,i)=>`<div class="s-it"><div class="s-tx">${n}</div><label class="sw"><input type="checkbox" onchange="u.adv[${i}]=this.checked;svU();apA()" ${u.adv[i]?'checked':''}><span class="sl"></span></label></div>`).join('');
-}
-
-function cAdv(){
-  $('adv-mod').classList.remove('show');
-}
-
-function chkAuTh(){
-  $('auth-mod').classList.remove('hide');
-  $('sin-usn').value='';$('sin-pwd').value='';$('sup-usn').value='';$('sup-pwd').value='';$('sup-name').value='';$('sup-tag').value='';
-}
-
-function swAuTh(t){
-  if(t==='sin'){
-    $('tab-sin').classList.add('active');$('tab-sup').classList.remove('active');$('f-sin').classList.add('active');$('f-sup').classList.remove('active');
-  }else{
-    $('tab-sup').classList.add('active');$('tab-sin').classList.remove('active');$('f-sup').classList.add('active');$('f-sin').classList.remove('active');
-  }
-}
-
-function hSin(){
-  let usn=$('sin-usn').value.trim(),pwd=$('sin-pwd').value;
-  if(!usn||!pwd){tst('Please fill all fields');return;}
-  let acts=JSON.parse(localStorage.getItem('kbs_accounts')||'[]');
-  let hash=CryptoJS.SHA256(pwd).toString();
-  let found=acts.find(x=>x.usn===usn&&x.pwd===hash);
-  if(found){
-    u=found;
-    localStorage.setItem('kbs_cur_user',usn);
-    $('auth-mod').classList.add('hide');
-    rU();apA();
-    tst(`Welcome back, ${u.n}`);
-  }else{
-    tst('Invalid username or password');
-  }
-}
-
-function hSup(){
-  let name=$('sup-name').value.trim(),tag=$('sup-tag').value.trim(),usn=$('sup-usn').value.trim(),pwd=$('sup-pwd').value;
-  if(!name||!tag||!usn||!pwd){tst('Please fill all fields');return;}
-  let acts=JSON.parse(localStorage.getItem('kbs_accounts')||'[]');
-  if(acts.some(x=>x.usn===usn)){tst('Username already exists');return;}
-  let hash=CryptoJS.SHA256(pwd).toString();
-  let nU={p:[],r:[],n:name,t:tag,a:`https://placehold.co/100/2563eb/fff?text=${name.charAt(0).toUpperCase()}`,adv:new Array(30).fill(!1),usn:usn,pwd:hash};
-  acts.push(nU);
-  localStorage.setItem('kbs_accounts',JSON.stringify(acts));
-  u=nU;
-  localStorage.setItem('kbs_cur_user',usn);
-  $('auth-mod').classList.add('hide');
-  rU();apA();
-  tst('Account Created Successfully');
-}
-
-function loUt(){
-  localStorage.removeItem('kbs_cur_user');
-  cMod();cDv();chkAuTh();
-  tst('Logged Out');
-}
-
-function oAuthFromProfile(){
-  cMod();chkAuTh();
-}
-
-function rAcL(){
-  let acts=JSON.parse(localStorage.getItem('kbs_accounts')||'[]');
-  let h='';
-  acts.forEach(x=>{
-    let isCur=(x.usn===u.usn)?'<span class="ac-badge">Active</span>':'';
-    h+=`<div class="ac-item" onclick="swAc('${x.usn}')"><img src="${x.a}"><div class="ac-info"><div class="ac-name">${x.n}</div><div class="ac-tag">@${x.t}</div></div>${isCur}</div>`;
-  });
-  $('pf-ac-list').innerHTML=h;
-}
-
-function swAc(usn){
-  if(usn===u.usn)return;
-  let acts=JSON.parse(localStorage.getItem('kbs_accounts')||'[]');
-  let found=acts.find(x=>x.usn===usn);
-  if(found){
-    u=found;
-    localStorage.setItem('kbs_cur_user',usn);
-    rU();apA();
-    tst(`Switched to ${u.n}`);
-    cMod();
-  }
-}
-
-function oMv(src){
-  if(!src)return;
-  vp(15);
-  $('mv-img').src=src;
-  $('media-viewer').classList.add('show');
-}
-
-function cMv(){
-  $('media-viewer').classList.remove('show');
-  setTimeout(()=>{$('mv-img').src=''},300);
-}
-
-function oMvPrivacy(){
-  oMv('kbiosstore.png');
-  tst('KBIOS Privacy Policy V2 Encrypted Mode');
-}
+]
