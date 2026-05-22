@@ -7,153 +7,103 @@
     "icon": "https://placehold.co/200/2563eb/fff?text=KP",
     "size": "120MB",
     "rate": "4.9",
-    "rateCount": "50K",
     "downloads": "1M+",
     "age": "12+",
-    "rank": "#1",
-    "tags": [
-      "Action",
-      "Strategy",
-      "Secure"
-    ],
-    "featured": true,
-    "trending": true,
-    "desc": "The ultimate secure protocol simulation game. Dive into the deep end of system management and defend your nodes from external breaches. Featuring real-time haptic feedback and dynamic UI.",
+    "tags": ["Action", "Strategy", "Secure"],
+    "desc": "เกมจำลองระบบโปรโตคอลความปลอดภัยขั้นสูงสุด เจาะลึกการจัดการระบบเครือข่าย ป้องกันโหนดของคุณจากการรุกรานภายนอก พร้อม UI แบบเรียลไทม์",
     "updated": "2026-05-20",
     "pkg": "com.kbios.protocol",
-    "updateSize": "15MB",
     "ver": "2.1.0",
-    "verified": true,
     "img": [
       "https://placehold.co/600x300/1e293b/fff?text=Gameplay+1",
-      "https://placehold.co/600x300/1e293b/fff?text=Gameplay+2",
-      "https://placehold.co/600x300/1e293b/fff?text=Gameplay+3"
+      "https://placehold.co/600x300/1e293b/fff?text=Gameplay+2"
     ],
     "type": "html",
     "link": "https://www.youtube.com/embed/jNQXAC9IVRw"
   },
   {
+    "id": "a1",
+    "cat": "apps",
+    "title": "Nano Terminal",
+    "dev": "Pro Nano",
+    "icon": "https://placehold.co/200/10b981/fff?text=NT",
+    "size": "15MB",
+    "rate": "4.8",
+    "downloads": "500K+",
+    "age": "3+",
+    "tags": ["Tools", "Terminal", "System"],
+    "desc": "Advanced terminal emulator สำหรับ Local Node ของคุณ รันคำสั่งได้อย่างแม่นยำและรวดเร็ว รองรับสคริปต์ซับซ้อน",
+    "updated": "2026-05-15",
+    "pkg": "com.nano.terminal",
+    "ver": "1.0.4",
+    "img": [
+      "https://placehold.co/600x300/064e3b/fff?text=Terminal+UI"
+    ],
+    "type": "html",
+    "link": "https://www.example.com"
+  },
+  {
+    "id": "b1",
+    "cat": "books",
+    "title": "The Code Matrix",
+    "dev": "KBIOS Division",
+    "icon": "https://placehold.co/200/8b5cf6/fff?text=CM",
+    "size": "5.2MB",
+    "rate": "4.5",
+    "downloads": "10K+",
+    "age": "18+",
+    "tags": ["Education", "Programming", "Deep Dive"],
+    "desc": "เจาะลึกหนังสือคู่มือฉบับสมบูรณ์ที่วิเคราะห์และทำความเข้าใจความซับซ้อนของโครงสร้าง Web Architecture ยุคใหม่",
+    "updated": "2026-01-10",
+    "pkg": "book.code.matrix",
+    "ver": "1.0.0",
+    "img": [
+      "https://placehold.co/600x300/4c1d95/fff?text=Book+Cover"
+    ],
+    "type": "file",
+    "link": "#"
+  },
+  {
+    "id": "f1",
+    "cat": "files",
+    "title": "Core System Drivers",
+    "dev": "System Node",
+    "icon": "https://placehold.co/200/f59e0b/fff?text=DRV",
+    "size": "450MB",
+    "rate": "4.7",
+    "downloads": "2M+",
+    "age": "3+",
+    "tags": ["System", "Drivers", "Backup"],
+    "desc": "ไฟล์ไดรเวอร์หลักที่จำเป็นสำหรับรีดประสิทธิภาพสูงสุดและเพิ่มความเสถียรให้กับทุก Micro-systems",
+    "updated": "2026-04-22",
+    "pkg": "file.core.drivers",
+    "ver": "3.2.1",
+    "img": [
+      "https://placehold.co/600x300/78350f/fff?text=Driver+Logs"
+    ],
+    "type": "file",
+    "link": "#"
+  },
+  {
     "id": "g2",
     "cat": "games",
-    "title": "Nano Strike",
-    "dev": "Pro Nano",
-    "icon": "https://placehold.co/200/10b981/fff?text=NS",
-    "size": "85MB",
-    "rate": "4.7",
-    "rateCount": "12K",
-    "downloads": "500K+",
-    "age": "16+",
-    "rank": "#2",
-    "tags": [
-      "FPS",
-      "Multiplayer",
-      "Fast"
-    ],
-    "featured": false,
-    "trending": true,
-    "desc": "High-octane tactical multiplayer shooter optimized for micro-systems and low-latency environments.",
-    "updated": "2026-04-15",
-    "pkg": "com.nano.strike",
-    "updateSize": "85MB",
-    "ver": "1.0.4",
-    "verified": true,
+    "title": "Cyber Node 2077",
+    "dev": "System Node",
+    "icon": "https://placehold.co/200/ef4444/fff?text=CN",
+    "size": "2.4GB",
+    "rate": "4.6",
+    "downloads": "800K+",
+    "age": "18+",
+    "tags": ["RPG", "Action", "Cyberpunk"],
+    "desc": "ออกสำรวจโหนดใต้ดินในโลกแห่งอนาคต เกม Open-world RPG Simulator ที่ขับเคลื่อนด้วยกราฟิกสุดอลังการ",
+    "updated": "2026-05-01",
+    "pkg": "com.sysnode.cyber",
+    "ver": "1.5.0",
     "img": [
-      "https://placehold.co/600x300/064e3b/fff?text=Strike+Battle"
+      "https://placehold.co/600x300/7f1d1d/fff?text=Neon+City",
+      "https://placehold.co/600x300/7f1d1d/fff?text=Action+Scene"
     ],
     "type": "html",
-    "link": "#"
-  },
-  {
-    "id": "f3",
-    "cat": "files",
-    "title": "KBIOS Asset Pack",
-    "dev": "Design Node",
-    "icon": "https://placehold.co/200/ec4899/fff?text=AST",
-    "size": "240MB",
-    "rate": "4.8",
-    "rateCount": "15K",
-    "downloads": "300K+",
-    "age": "3+",
-    "rank": "#3",
-    "tags": [
-      "Assets",
-      "Design",
-      "Templates"
-    ],
-    "featured": true,
-    "trending": false,
-    "desc": "Massive collection of curated SVGs, high-performance CSS templates, and premium animation presets.",
-    "updated": "2026-04-10",
-    "pkg": "file.assets.pack",
-    "updateSize": "240MB",
-    "ver": "1.0.0",
-    "verified": true,
-    "img": [
-      "https://placehold.co/600x300/500724/fff?text=Vector+Preview"
-    ],
-    "type": "file",
-    "link": "#"
-  },
-  {
-    "id": "f4",
-    "cat": "files",
-    "title": "Legacy Drivers Backup",
-    "dev": "Core Devs",
-    "icon": "https://placehold.co/200/14b8a6/fff?text=DRV",
-    "size": "850MB",
-    "rate": "4.2",
-    "rateCount": "1K",
-    "downloads": "8K+",
-    "age": "3+",
-    "rank": "#4",
-    "tags": [
-      "Drivers",
-      "Backup",
-      "System"
-    ],
-    "featured": false,
-    "trending": false,
-    "desc": "Archived system drivers for legacy hardware compatibility and stability fallback.",
-    "updated": "2025-11-20",
-    "pkg": "file.legacy.drivers",
-    "updateSize": "850MB",
-    "ver": "1.0.0",
-    "verified": false,
-    "img": [
-      "https://placehold.co/600x300/042f2e/fff?text=Hardware+List"
-    ],
-    "type": "file",
-    "link": "#"
-  },
-  {
-    "id": "g9",
-    "cat": "games",
-    "title": "Crypto Miner Sim",
-    "dev": "Block Node",
-    "icon": "https://placehold.co/200/f59e0b/fff?text=CM",
-    "size": "55MB",
-    "rate": "4.1",
-    "rateCount": "5K",
-    "downloads": "100K+",
-    "age": "3+",
-    "rank": "#5",
-    "tags": [
-      "Simulation",
-      "Crypto",
-      "Idle"
-    ],
-    "featured": false,
-    "trending": false,
-    "desc": "Simulate building a massive mining rig farm from scratch, manage thermal efficiency and hash rates.",
-    "updated": "2026-01-05",
-    "pkg": "com.cryptominer.sim",
-    "updateSize": "55MB",
-    "ver": "1.2.0",
-    "verified": false,
-    "img": [
-      "https://placehold.co/600x300/78350f/fff?text=Miner+UI"
-    ],
-    "type": "html",
-    "link": "#"
+    "link": "https://www.youtube.com/embed/dQw4w9WgXcQ"
   }
 ]
