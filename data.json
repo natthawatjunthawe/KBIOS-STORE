@@ -1,109 +1,78 @@
-[
-  {
-    "id": "g1",
-    "cat": "games",
-    "title": "KBIOS Protocol",
-    "dev": "KBIOS Division",
-    "icon": "https://placehold.co/200/2563eb/fff?text=KP",
-    "size": "120MB",
-    "rate": "4.9",
-    "downloads": "1M+",
-    "age": "12+",
-    "tags": ["Action", "Strategy", "Secure"],
-    "desc": "เกมจำลองระบบโปรโตคอลความปลอดภัยขั้นสูงสุด เจาะลึกการจัดการระบบเครือข่าย ป้องกันโหนดของคุณจากการรุกรานภายนอก พร้อม UI แบบเรียลไทม์",
-    "updated": "2026-05-20",
-    "pkg": "com.kbios.protocol",
-    "ver": "2.1.0",
-    "img": [
-      "https://placehold.co/600x300/1e293b/fff?text=Gameplay+1",
-      "https://placehold.co/600x300/1e293b/fff?text=Gameplay+2"
-    ],
-    "type": "html",
-    "link": "https://www.youtube.com/embed/jNQXAC9IVRw"
+{
+  "invites": [
+    "@196HsknH.kbiosstore",
+    "@KBIOS888.kbiosstore",
+    "@DEV2026X.kbiosstore"
+  ],
+  "devPages": {
+    "KBIOS Division": {
+      "banner": "https://placehold.co/800x400/0f172a/fff?text=KBIOS+HQ",
+      "icon": "https://placehold.co/200/1e293b/fff?text=KBIOS",
+      "desc": "Official System Developer. สร้างสรรค์และพัฒนาระบบความปลอดภัยขั้นสูงสุดระดับ Enterprise",
+      "pinned": "g1",
+      "links": [
+        {"icon": "fa-solid fa-globe", "url": "https://example.com", "name": "Website"},
+        {"icon": "fa-brands fa-github", "url": "https://github.com", "name": "Source"}
+      ]
+    }
   },
-  {
-    "id": "a1",
-    "cat": "apps",
-    "title": "Nano Terminal",
-    "dev": "Pro Nano",
-    "icon": "https://placehold.co/200/10b981/fff?text=NT",
-    "size": "15MB",
-    "rate": "4.8",
-    "downloads": "500K+",
-    "age": "3+",
-    "tags": ["Tools", "Terminal", "System"],
-    "desc": "Advanced terminal emulator สำหรับ Local Node ของคุณ รันคำสั่งได้อย่างแม่นยำและรวดเร็ว รองรับสคริปต์ซับซ้อน",
-    "updated": "2026-05-15",
-    "pkg": "com.nano.terminal",
-    "ver": "1.0.4",
-    "img": [
-      "https://placehold.co/600x300/064e3b/fff?text=Terminal+UI"
-    ],
-    "type": "html",
-    "link": "https://www.example.com"
-  },
-  {
-    "id": "b1",
-    "cat": "books",
-    "title": "The Code Matrix",
-    "dev": "KBIOS Division",
-    "icon": "https://placehold.co/200/8b5cf6/fff?text=CM",
-    "size": "5.2MB",
-    "rate": "4.5",
-    "downloads": "10K+",
-    "age": "18+",
-    "tags": ["Education", "Programming", "Deep Dive"],
-    "desc": "เจาะลึกหนังสือคู่มือฉบับสมบูรณ์ที่วิเคราะห์และทำความเข้าใจความซับซ้อนของโครงสร้าง Web Architecture ยุคใหม่",
-    "updated": "2026-01-10",
-    "pkg": "book.code.matrix",
-    "ver": "1.0.0",
-    "img": [
-      "https://placehold.co/600x300/4c1d95/fff?text=Book+Cover"
-    ],
-    "type": "file",
-    "link": "#"
-  },
-  {
-    "id": "f1",
-    "cat": "files",
-    "title": "Core System Drivers",
-    "dev": "System Node",
-    "icon": "https://placehold.co/200/f59e0b/fff?text=DRV",
-    "size": "450MB",
-    "rate": "4.7",
-    "downloads": "2M+",
-    "age": "3+",
-    "tags": ["System", "Drivers", "Backup"],
-    "desc": "ไฟล์ไดรเวอร์หลักที่จำเป็นสำหรับรีดประสิทธิภาพสูงสุดและเพิ่มความเสถียรให้กับทุก Micro-systems",
-    "updated": "2026-04-22",
-    "pkg": "file.core.drivers",
-    "ver": "3.2.1",
-    "img": [
-      "https://placehold.co/600x300/78350f/fff?text=Driver+Logs"
-    ],
-    "type": "file",
-    "link": "#"
-  },
-  {
-    "id": "g2",
-    "cat": "games",
-    "title": "Cyber Node 2077",
-    "dev": "System Node",
-    "icon": "https://placehold.co/200/ef4444/fff?text=CN",
-    "size": "2.4GB",
-    "rate": "4.6",
-    "downloads": "800K+",
-    "age": "18+",
-    "tags": ["RPG", "Action", "Cyberpunk"],
-    "desc": "ออกสำรวจโหนดใต้ดินในโลกแห่งอนาคต เกม Open-world RPG Simulator ที่ขับเคลื่อนด้วยกราฟิกสุดอลังการ",
-    "updated": "2026-05-01",
-    "pkg": "com.sysnode.cyber",
-    "ver": "1.5.0",
-    "img": [
-      "https://placehold.co/600x300/7f1d1d/fff?text=Neon+City",
-      "https://placehold.co/600x300/7f1d1d/fff?text=Action+Scene"
-    ],
-    "type": "html",
-    "link": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  }
-]
+  "items": [
+    {
+      "id": "g1",
+      "cat": "games",
+      "title": "KBIOS Protocol",
+      "dev": "KBIOS Division",
+      "icon": "https://placehold.co/200/2563eb/fff?text=KP",
+      "size": "120MB",
+      "rate": "4.9",
+      "downloads": "1M+",
+      "age": "12+",
+      "tags": ["Action", "Strategy", "Secure"],
+      "desc": "เกมจำลองระบบโปรโตคอลความปลอดภัยขั้นสูงสุด เจาะลึกการจัดการระบบเครือข่าย ป้องกันโหนดของคุณจากการรุกรานภายนอก",
+      "updated": "2026-05-20",
+      "pkg": "com.kbios.protocol",
+      "ver": "2.1.0",
+      "img": ["https://placehold.co/600x300/1e293b/fff?text=Gameplay+1","https://placehold.co/600x300/1e293b/fff?text=Gameplay+2"],
+      "type": "html",
+      "link": "https://www.youtube.com/embed/jNQXAC9IVRw"
+    },
+    {
+      "id": "a1",
+      "cat": "apps",
+      "title": "Nano Terminal",
+      "dev": "Pro Nano",
+      "icon": "https://placehold.co/200/10b981/fff?text=NT",
+      "size": "15MB",
+      "rate": "4.8",
+      "downloads": "500K+",
+      "age": "3+",
+      "tags": ["Tools", "Terminal"],
+      "desc": "Advanced terminal emulator สำหรับ Local Node ของคุณ รันคำสั่งได้อย่างแม่นยำและรวดเร็ว",
+      "updated": "2026-05-15",
+      "pkg": "com.nano.terminal",
+      "ver": "1.0.4",
+      "img": ["https://placehold.co/600x300/064e3b/fff?text=Terminal+UI"],
+      "type": "html",
+      "link": "https://www.example.com"
+    },
+    {
+      "id": "b1",
+      "cat": "books",
+      "title": "Cyber Security Guide",
+      "dev": "KBIOS Division",
+      "icon": "https://placehold.co/200/8b5cf6/fff?text=CS",
+      "size": "2.5MB",
+      "rate": "4.7",
+      "downloads": "100K+",
+      "age": "18+",
+      "tags": ["Education", "Security"],
+      "desc": "คู่มือเชิงลึกด้านความปลอดภัยทางไซเบอร์ อ่านง่ายเจาะลึกโครงสร้างพื้นฐาน",
+      "updated": "2026-01-10",
+      "pkg": "book.cs.guide",
+      "ver": "1.0.0",
+      "img": ["https://placehold.co/600x300/4c1d95/fff?text=Book+Cover"],
+      "type": "file",
+      "link": "data:text/plain;base64,VGVzdCBCb29rIENvbnRlbnQ="
+    }
+  ]
+}
