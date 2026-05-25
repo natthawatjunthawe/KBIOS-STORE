@@ -1,167 +1,170 @@
-[
-  {
-    "id": "g001",
-    "title": "Cyber Dash 2026",
-    "cat": "games",
-    "dev": "Neon Studios",
-    "icon": "https://placehold.co/200/ff3b30/ffffff?text=CD",
-    "img": [
-      "https://placehold.co/800x450/1e1e2e/ff3b30?text=Gameplay+Scene+1",
-      "https://placehold.co/800x450/1e1e2e/ff3b30?text=Boss+Fight",
-      "https://placehold.co/800x450/1e1e2e/ff3b30?text=Item+Shop"
-    ],
-    "rate": 4.8,
-    "size": "1.2GB",
-    "ver": "2.1.0",
-    "downloads": "500K+",
-    "age": "12+",
-    "tags": ["Action", "Arcade", "60FPS", "Offline"],
-    "desc": "เกมวิ่งทะลุมิติสุดมันส์ กราฟิกลื่นไหล 60FPS พัฒนาเพื่อรันบน KBIOS Environment โดยเฉพาะ มาพร้อมด่านใหม่และบอสสุดหิน ระบบฟิสิกส์สมจริงระดับควอนตัม",
-    "updated": "2026-05-15",
-    "pkg": "com.neon.cyberdash",
-    "link": "https://poki.com/en/g/subway-surfers"
-  },
-  {
-    "id": "g002",
-    "title": "Quantum Strike",
-    "cat": "games",
-    "dev": "KBIOS Team",
-    "icon": "https://placehold.co/200/0ea5e9/ffffff?text=QS",
-    "img": [
-      "https://placehold.co/800x450/0f172a/0ea5e9?text=Multiplayer+Arena",
-      "https://placehold.co/800x450/0f172a/0ea5e9?text=Weapon+Customization"
-    ],
-    "rate": 4.9,
-    "size": "3.5GB",
-    "ver": "1.0.2",
-    "downloads": "1M+",
-    "age": "16+",
-    "tags": ["FPS", "Multiplayer", "Competitive"],
-    "desc": "เกมยิงปืน FPS ระดับ High-End ที่ใช้เอนจิ้น KBIOS Matrix ในการประมวลผลแสงและเงาแบบ Real-time แข่งขันกับผู้เล่นทั่วโลกในเซิร์ฟเวอร์ความหน่วงต่ำ (Low Latency)",
-    "updated": "2026-05-20",
-    "pkg": "com.kbios.qstrike",
-    "link": "https://poki.com/en/g/venge-io"
-  },
-  {
-    "id": "a001",
-    "title": "K-Browser Pro",
-    "cat": "apps",
-    "dev": "KBIOS Team",
-    "icon": "https://placehold.co/200/2563eb/ffffff?text=KB",
-    "img": [
-      "https://placehold.co/800x1200/2563eb/ffffff?text=Web+View",
-      "https://placehold.co/800x1200/1e293b/ffffff?text=Dark+Mode"
-    ],
-    "rate": 4.9,
-    "size": "45MB",
-    "ver": "3.5.0",
-    "downloads": "5M+",
-    "age": "3+",
-    "tags": ["Utility", "Web", "Fast", "Secure"],
-    "desc": "เว็บเบราว์เซอร์อย่างเป็นทางการของระบบปฏิบัติการ KBIOS เร็ว แรง ปลอดภัย พร้อมระบบบล็อกโฆษณาและการเข้ารหัสข้อมูลระดับทหาร (Military-grade Encryption)",
-    "updated": "2026-05-22",
-    "pkg": "com.kbios.browser",
-    "link": "https://example.com"
-  },
-  {
-    "id": "a002",
-    "title": "Nat AI Studio",
-    "cat": "apps",
-    "dev": "Nat AI Pro",
-    "icon": "https://placehold.co/200/8b5cf6/ffffff?text=NAI",
-    "img": [
-      "https://placehold.co/800x1200/8b5cf6/ffffff?text=Prompt+Input",
-      "https://placehold.co/800x1200/0f172a/ffffff?text=Image+Generation+Result"
-    ],
-    "rate": 4.7,
-    "size": "120MB",
-    "ver": "2.0.1",
-    "downloads": "250K+",
-    "age": "12+",
-    "tags": ["AI", "Productivity", "Art", "Tools"],
-    "desc": "ปลดปล่อยจินตนาการของคุณด้วย Nat AI Pro Engine สร้างรูปภาพ เขียนโค้ด และจัดการงานเอกสารอัตโนมัติด้วยระบบ Neural Network ที่ฉลาดที่สุดในสโตร์",
-    "updated": "2026-05-24",
-    "pkg": "app.natai.studio",
-    "link": "https://example.com/natai"
-  },
-  {
-    "id": "b001",
-    "title": "The Matrix Code",
-    "cat": "books",
-    "dev": "Neon Studios",
-    "icon": "https://placehold.co/200/10b981/ffffff?text=MC",
-    "img": [
-      "https://placehold.co/600x800/10b981/ffffff?text=Book+Cover",
-      "https://placehold.co/600x800/f8fafc/0f172a?text=Page+Preview+1"
-    ],
-    "rate": 4.5,
-    "size": "12MB",
-    "ver": "1.0.0",
-    "downloads": "15K+",
-    "age": "16+",
-    "tags": ["Sci-Fi", "Tech", "Novel", "E-Book"],
-    "desc": "เจาะลึกโลกแห่งโค้ดและการจำลองเสมือนจริง หนังสือที่จะเปลี่ยนมุมมองที่คุณมีต่อโลกใบนี้ไปตลอดกาล พร้อมภาพประกอบ Digital Art สุดล้ำ (เปิดอ่านผ่านเบราว์เซอร์แยกได้ทันที)",
-    "updated": "2025-12-01",
-    "pkg": "book.matrix.code",
-    "link": "https://example.com/read/matrix-code"
-  },
-  {
-    "id": "b002",
-    "title": "Mastering KBIOS Environment",
-    "cat": "books",
-    "dev": "KBIOS Team",
-    "icon": "https://placehold.co/200/3b82f6/ffffff?text=MKE",
-    "img": [
-      "https://placehold.co/600x800/3b82f6/ffffff?text=Official+Guide+Cover"
-    ],
-    "rate": 5.0,
-    "size": "25MB",
-    "ver": "2026.1",
-    "downloads": "80K+",
-    "age": "All",
-    "tags": ["Education", "Programming", "Manual"],
-    "desc": "คู่มือการใช้งานและการพัฒนาแอปลง KBIOS PLAYS ฉบับสมบูรณ์ ตั้งแต่ระดับพื้นฐานจนถึงการเชื่อมต่อ Neural Matrix และการจัดการ File Architecture",
-    "updated": "2026-04-10",
-    "pkg": "book.kbios.manual",
-    "link": "https://example.com/read/kbios-guide"
-  },
-  {
-    "id": "f001",
-    "title": "Core System Patch v1.5",
-    "cat": "files",
-    "dev": "KBIOS Team",
-    "icon": "https://placehold.co/200/f59e0b/ffffff?text=SYS",
-    "img": [],
-    "rate": 5.0,
-    "size": "250MB",
-    "ver": "1.5.0",
-    "downloads": "100K+",
-    "age": "All",
-    "tags": ["System", "Update", "Security", "Root"],
-    "desc": "แพตช์รักษาความปลอดภัยและอัปเดตแกนระบบ (Core System) แนะนำให้ผู้ใช้ทุกคนทำการดาวน์โหลดและติดตั้งทันทีเพื่อเสถียรภาพสูงสุด ลดอาการกระตุกของแอปพลิเคชันพื้นหลัง",
-    "updated": "2026-05-25",
-    "pkg": "sys.patch.150",
-    "link": ""
-  },
-  {
-    "id": "f002",
-    "title": "Neon Texture Pack 4K",
-    "cat": "files",
-    "dev": "Neon Studios",
-    "icon": "https://placehold.co/200/ec4899/ffffff?text=4K",
-    "img": [
-      "https://placehold.co/800x450/ec4899/ffffff?text=Texture+Before",
-      "https://placehold.co/800x450/10b981/ffffff?text=Texture+After"
-    ],
-    "rate": 4.6,
-    "size": "850MB",
-    "ver": "1.0.0",
-    "downloads": "45K+",
-    "age": "All",
-    "tags": ["Mod", "Graphics", "Extension"],
-    "desc": "แพ็กเสริมความคมชัดระดับ 4K สำหรับใช้งานร่วมกับ Cyber Dash 2026 โปรดตรวจสอบให้แน่ใจว่าอุปกรณ์ของคุณมีพื้นที่ว่างเพียงพอ (ดาวน์โหลดลงใน File Manager)",
-    "updated": "2026-02-14",
-    "pkg": "ext.neon.texture4k",
-    "link": ""
-  }
-]
+{
+  "bg": "https://placehold.co/1920x1080/0f172a/fff?text=Main+System+Background",
+  "items": [
+    {
+      "id": "g001",
+      "title": "Cyber Dash 2026",
+      "cat": "games",
+      "dev": "Neon Studios",
+      "icon": "https://placehold.co/200/ff3b30/ffffff?text=CD",
+      "img": [
+        "https://placehold.co/800x450/1e1e2e/ff3b30?text=Gameplay+Scene+1",
+        "https://placehold.co/800x450/1e1e2e/ff3b30?text=Boss+Fight",
+        "https://placehold.co/800x450/1e1e2e/ff3b30?text=Item+Shop"
+      ],
+      "rate": 4.8,
+      "size": "1.2GB",
+      "ver": "2.1.0",
+      "downloads": "500K+",
+      "age": "12+",
+      "tags": ["Action", "Arcade", "60FPS", "Offline"],
+      "desc": "เกมวิ่งทะลุมิติสุดมันส์ กราฟิกลื่นไหล 60FPS พัฒนาเพื่อรันบน KBIOS Environment โดยเฉพาะ มาพร้อมด่านใหม่และบอสสุดหิน ระบบฟิสิกส์สมจริงระดับควอนตัม",
+      "updated": "2026-05-15",
+      "pkg": "com.neon.cyberdash",
+      "link": "https://poki.com/en/g/subway-surfers"
+    },
+    {
+      "id": "g002",
+      "title": "Quantum Strike",
+      "cat": "games",
+      "dev": "KBIOS Team",
+      "icon": "https://placehold.co/200/0ea5e9/ffffff?text=QS",
+      "img": [
+        "https://placehold.co/800x450/0f172a/0ea5e9?text=Multiplayer+Arena",
+        "https://placehold.co/800x450/0f172a/0ea5e9?text=Weapon+Customization"
+      ],
+      "rate": 4.9,
+      "size": "3.5GB",
+      "ver": "1.0.2",
+      "downloads": "1M+",
+      "age": "16+",
+      "tags": ["FPS", "Multiplayer", "Competitive"],
+      "desc": "เกมยิงปืน FPS ระดับ High-End ที่ใช้เอนจิ้น KBIOS Matrix ในการประมวลผลแสงและเงาแบบ Real-time แข่งขันกับผู้เล่นทั่วโลกในเซิร์ฟเวอร์ความหน่วงต่ำ (Low Latency)",
+      "updated": "2026-05-20",
+      "pkg": "com.kbios.qstrike",
+      "link": "https://poki.com/en/g/venge-io"
+    },
+    {
+      "id": "a001",
+      "title": "K-Browser Pro",
+      "cat": "apps",
+      "dev": "KBIOS Team",
+      "icon": "https://placehold.co/200/2563eb/ffffff?text=KB",
+      "img": [
+        "https://placehold.co/800x1200/2563eb/ffffff?text=Web+View",
+        "https://placehold.co/800x1200/1e293b/ffffff?text=Dark+Mode"
+      ],
+      "rate": 4.9,
+      "size": "45MB",
+      "ver": "3.5.0",
+      "downloads": "5M+",
+      "age": "3+",
+      "tags": ["Utility", "Web", "Fast", "Secure"],
+      "desc": "เว็บเบราว์เซอร์อย่างเป็นทางการของระบบปฏิบัติการ KBIOS เร็ว แรง ปลอดภัย พร้อมระบบบล็อกโฆษณาและการเข้ารหัสข้อมูลระดับทหาร (Military-grade Encryption)",
+      "updated": "2026-05-22",
+      "pkg": "com.kbios.browser",
+      "link": "https://example.com"
+    },
+    {
+      "id": "a002",
+      "title": "Nat AI Studio",
+      "cat": "apps",
+      "dev": "Nat AI Pro",
+      "icon": "https://placehold.co/200/8b5cf6/ffffff?text=NAI",
+      "img": [
+        "https://placehold.co/800x1200/8b5cf6/ffffff?text=Prompt+Input",
+        "https://placehold.co/800x1200/0f172a/ffffff?text=Image+Generation+Result"
+      ],
+      "rate": 4.7,
+      "size": "120MB",
+      "ver": "2.0.1",
+      "downloads": "250K+",
+      "age": "12+",
+      "tags": ["AI", "Productivity", "Art", "Tools"],
+      "desc": "ปลดปล่อยจินตนาการของคุณด้วย Nat AI Pro Engine สร้างรูปภาพ เขียนโค้ด และจัดการงานเอกสารอัตโนมัติด้วยระบบ Neural Network ที่ฉลาดที่สุดในสโตร์",
+      "updated": "2026-05-24",
+      "pkg": "app.natai.studio",
+      "link": "https://example.com/natai"
+    },
+    {
+      "id": "b001",
+      "title": "The Matrix Code",
+      "cat": "books",
+      "dev": "Neon Studios",
+      "icon": "https://placehold.co/200/10b981/ffffff?text=MC",
+      "img": [
+        "https://placehold.co/600x800/10b981/ffffff?text=Book+Cover",
+        "https://placehold.co/600x800/f8fafc/0f172a?text=Page+Preview+1"
+      ],
+      "rate": 4.5,
+      "size": "12MB",
+      "ver": "1.0.0",
+      "downloads": "15K+",
+      "age": "16+",
+      "tags": ["Sci-Fi", "Tech", "Novel", "E-Book"],
+      "desc": "เจาะลึกโลกแห่งโค้ดและการจำลองเสมือนจริง หนังสือที่จะเปลี่ยนมุมมองที่คุณมีต่อโลกใบนี้ไปตลอดกาล พร้อมภาพประกอบ Digital Art สุดล้ำ (เปิดอ่านผ่านเบราว์เซอร์แยกได้ทันที)",
+      "updated": "2025-12-01",
+      "pkg": "book.matrix.code",
+      "link": "https://example.com/read/matrix-code"
+    },
+    {
+      "id": "b002",
+      "title": "Mastering KBIOS Environment",
+      "cat": "books",
+      "dev": "KBIOS Team",
+      "icon": "https://placehold.co/200/3b82f6/ffffff?text=MKE",
+      "img": [
+        "https://placehold.co/600x800/3b82f6/ffffff?text=Official+Guide+Cover"
+      ],
+      "rate": 5.0,
+      "size": "25MB",
+      "ver": "2026.1",
+      "downloads": "80K+",
+      "age": "All",
+      "tags": ["Education", "Programming", "Manual"],
+      "desc": "คู่มือการใช้งานและการพัฒนาแอปลง KBIOS PLAYS ฉบับสมบูรณ์ ตั้งแต่ระดับพื้นฐานจนถึงการเชื่อมต่อ Neural Matrix และการจัดการ File Architecture",
+      "updated": "2026-04-10",
+      "pkg": "book.kbios.manual",
+      "link": "https://example.com/read/kbios-guide"
+    },
+    {
+      "id": "f001",
+      "title": "Core System Patch v1.5",
+      "cat": "files",
+      "dev": "KBIOS Team",
+      "icon": "https://placehold.co/200/f59e0b/ffffff?text=SYS",
+      "img": [],
+      "rate": 5.0,
+      "size": "250MB",
+      "ver": "1.5.0",
+      "downloads": "100K+",
+      "age": "All",
+      "tags": ["System", "Update", "Security", "Root"],
+      "desc": "แพตช์รักษาความปลอดภัยและอัปเดตแกนระบบ (Core System) แนะนำให้ผู้ใช้ทุกคนทำการดาวน์โหลดและติดตั้งทันทีเพื่อเสถียรภาพสูงสุด ลดอาการกระตุกของแอปพลิเคชันพื้นหลัง",
+      "updated": "2026-05-25",
+      "pkg": "sys.patch.150",
+      "link": ""
+    },
+    {
+      "id": "f002",
+      "title": "Neon Texture Pack 4K",
+      "cat": "files",
+      "dev": "Neon Studios",
+      "icon": "https://placehold.co/200/ec4899/ffffff?text=4K",
+      "img": [
+        "https://placehold.co/800x450/ec4899/ffffff?text=Texture+Before",
+        "https://placehold.co/800x450/10b981/ffffff?text=Texture+After"
+      ],
+      "rate": 4.6,
+      "size": "850MB",
+      "ver": "1.0.0",
+      "downloads": "45K+",
+      "age": "All",
+      "tags": ["Mod", "Graphics", "Extension"],
+      "desc": "แพ็กเสริมความคมชัดระดับ 4K สำหรับใช้งานร่วมกับ Cyber Dash 2026 โปรดตรวจสอบให้แน่ใจว่าอุปกรณ์ของคุณมีพื้นที่ว่างเพียงพอ (ดาวน์โหลดลงใน File Manager)",
+      "updated": "2026-02-14",
+      "pkg": "ext.neon.texture4k",
+      "link": ""
+    }
+  ]
+}
