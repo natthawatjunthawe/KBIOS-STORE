@@ -1,5 +1,6 @@
 {
   "Neon Studios": {
+    "bg": "https://placehold.co/1920x1080/1e1e2e/ffffff?text=Neon+Studios+Environment",
     "icon": "https://placehold.co/200/ff3b30/ffffff?text=Neon",
     "banner": "https://placehold.co/1200x500/1e1e2e/ffffff?text=Neon+Studios+Workspace",
     "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -13,6 +14,7 @@
     ]
   },
   "KBIOS Team": {
+    "bg": "https://placehold.co/1920x1080/0f172a/ffffff?text=KBIOS+Core+System+Background",
     "icon": "https://placehold.co/200/2563eb/ffffff?text=KBIOS",
     "banner": "https://placehold.co/1200x500/0f172a/ffffff?text=KBIOS+Core+Labs",
     "video": "",
