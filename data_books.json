@@ -1,0 +1,25 @@
+[
+  {
+    "id": "b01",
+    "cat": "books",
+    "title": "Quantum Compilation Theory",
+    "dev": "Dr. KBIOS Core",
+    "icon": "https://placehold.co/200/8b5cf6/fff?text=QCT",
+    "rate": "4.8",
+    "downloads": "25K+",
+    "age": "All",
+    "size": "45MB",
+    "ver": "3.0.0",
+    "desc": "Complete technical manual for high-density cluster management.",
+    "updated": "2026-04-12",
+    "released": "2024-03-22",
+    "type": "Digital Book Matrix",
+    "pkg": "org.kbios.books.qct",
+    "lang": "English",
+    "license": "Open Resource",
+    "compat": "Reader Node v4",
+    "tags": ["Education", "Quantum"],
+    "video": "",
+    "img": ["https://placehold.co/400x225/0f172a/fff"]
+  }
+]

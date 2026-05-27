@@ -1,0 +1,25 @@
+[
+  {
+    "id": "g01",
+    "cat": "games",
+    "title": "Cyber Matrix Arena",
+    "dev": "KBIOS Architecture",
+    "icon": "https://placehold.co/200/2563eb/fff?text=CMA",
+    "rate": "4.9",
+    "downloads": "500K+",
+    "age": "12+",
+    "size": "24.5GB",
+    "ver": "2.1.0",
+    "desc": "Next generation tactical neural simulation network node.",
+    "updated": "2026-05-20",
+    "released": "2025-11-01",
+    "type": "Executable Pack",
+    "pkg": "com.kbios.cyberarena",
+    "lang": "English, Thai",
+    "license": "Proprietary",
+    "compat": "Node OS 11+",
+    "tags": ["Action", "Simulation"],
+    "video": "./videos/promo_arena.mp4",
+    "img": ["https://placehold.co/400x225/1e293b/fff", "https://placehold.co/400x225/0f172a/fff"]
+  }
+]

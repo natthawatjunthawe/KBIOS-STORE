@@ -1,0 +1,25 @@
+[
+  {
+    "id": "a01",
+    "cat": "apps",
+    "title": "Neural Compiler Pro",
+    "dev": "KBIOS Architecture",
+    "icon": "https://placehold.co/200/10b981/fff?text=NCP",
+    "rate": "5.0",
+    "downloads": "100K+",
+    "age": "3+",
+    "size": "142MB",
+    "ver": "1.0.4",
+    "desc": "Highly compressed binary pipeline matrix compiler.",
+    "updated": "2026-05-25",
+    "released": "2026-01-15",
+    "type": "Application Binary",
+    "pkg": "com.kbios.compiler",
+    "lang": "English",
+    "license": "Licensed Node",
+    "compat": "Node OS 10+",
+    "tags": ["Development", "Tools"],
+    "video": "https://github.com/user-attachments/assets/sample-video.mp4",
+    "img": ["https://placehold.co/400x225/1e293b/fff"]
+  }
+]

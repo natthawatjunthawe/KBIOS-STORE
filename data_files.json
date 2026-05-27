@@ -1,0 +1,25 @@
+[
+  {
+    "id": "f01",
+    "cat": "files",
+    "title": "Kernel Cluster Asset File",
+    "dev": "KBIOS Architecture",
+    "icon": "https://placehold.co/200/64748b/fff?text=KCA",
+    "rate": "5.0",
+    "downloads": "10K+",
+    "age": "18+",
+    "size": "120.8GB",
+    "ver": "9.4.1",
+    "desc": "Core filesystem structural backup matrix node storage pack.",
+    "updated": "2026-05-27",
+    "released": "2026-05-27",
+    "type": "System File Pack",
+    "pkg": "sys.kbios.kernel.assets",
+    "lang": "Universal",
+    "license": "Restricted Encryption",
+    "compat": "Root Node Cluster",
+    "tags": ["System", "Backup"],
+    "video": "",
+    "img": []
+  }
+]
